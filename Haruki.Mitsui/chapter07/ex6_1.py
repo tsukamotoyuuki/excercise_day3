@@ -20,6 +20,7 @@ class Car:
         print(f"Seats: {self.__seats}, Max_speed: {self.__max_speed}")
 
 
+'''
 class Truck(Car):
     def __init__(self, seats, max_speed, capacity):
         super().__init__(seats, max_speed)
@@ -32,11 +33,12 @@ class Truck(Car):
     def spec(self):
         print(f"Seats: {self.seats}, Max_speed: {self.max_speed}, Capacity: {self.__capacity}")
 
+'''
 
-car1 = Car(4, 100)
-Truck = Truck(7, 90, 500)
-car3 = Car(4, 100)
-car1.spec()
-Truck.spec()
-car3.spec()
-print(car1 == car3)
+
+if __name__ == '__main__':
+    car1 = Car(4, 100)
+    car2 = Car(4, 100)
+    car1.spec()
+    car2.spec()
+    print(car1 == car2)
