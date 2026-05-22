@@ -14,7 +14,7 @@ class Book:
     @property
     def author(self):
         return self.__author
-    
+
     @author.setter
     def author(self, author):
         self.__author = author
